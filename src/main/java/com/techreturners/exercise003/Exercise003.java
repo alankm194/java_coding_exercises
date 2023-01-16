@@ -1,13 +1,20 @@
 package com.techreturners.exercise003;
 
-public class Exercise003 {
+import java.util.Arrays;
 
+public class Exercise003 {
+    private String[] iceCreamArray;
+    public Exercise003() {
+        this.iceCreamArray = iceCreamFlavours();
+    }
     int getIceCreamCode(String iceCreamFlavour) {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+        int iceCreamCode =  Arrays.asList(iceCreamArray).indexOf(iceCreamFlavour);
+        return iceCreamCode;
     }
 
     String[] iceCreamFlavours() {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+        String[] stringArray = { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
+        return stringArray;
     }
 
 }
