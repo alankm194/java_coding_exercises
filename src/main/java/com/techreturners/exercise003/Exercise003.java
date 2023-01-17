@@ -13,8 +13,8 @@ public class Exercise003 {
     }
 
     String[] iceCreamFlavours() {
-        String[] stringArray = { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
-        return stringArray;
+        String[] flavours = { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
+        return flavours;
     }
 
 }
