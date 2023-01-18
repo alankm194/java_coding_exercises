@@ -1,6 +1,5 @@
 package com.techreturners.exercise005;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -16,7 +15,7 @@ public class Exercise005 {
                 .filter(Character::isAlphabetic)
                 .collect(Collectors.toSet());
 
-        return setOfChars.size() == ALPHABET_LETTER_COUNT ? true : false;
+        return setOfChars.size() == ALPHABET_LETTER_COUNT;
     }
 
 }
