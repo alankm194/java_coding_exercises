@@ -1,7 +1,6 @@
 package com.techreturners.exercise001;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
@@ -24,9 +23,8 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        var listOfString = Arrays.asList(sentence.split(""));
-        Collections.reverse(listOfString);
-        return String.join("", listOfString);
+        var stringBuilder = new StringBuilder(sentence);
+        return stringBuilder.reverse().toString();
     }
 
     public int countLinuxUsers(List<User> users) {
